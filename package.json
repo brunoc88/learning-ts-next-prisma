@@ -1,0 +1,23 @@
+{
+  "name": "learning-ts-next-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoc88/learning-ts-next-prisma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoc88/learning-ts-next-prisma/issues"
+  },
+  "homepage": "https://github.com/brunoc88/learning-ts-next-prisma#readme",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

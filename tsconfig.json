@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "strict": true, // es muy importante, te obliga a escribir código más seguro.
+    "outDir": "./dist" // hace que el JS compilado se guarde en la carpeta dist/.
+  }
+}
