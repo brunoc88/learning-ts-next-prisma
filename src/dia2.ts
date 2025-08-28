@@ -58,3 +58,56 @@ const show = ([nombre, precio]: [string, number]): string => `El producto ${nomb
 console.log(show(producto)); // "El producto Detergente cuesta 100"
 
 // Aquí [nombre, precio] “extrae” directamente los elementos de la tupla.
+
+// Objetos
+
+// 1. Crea un objeto que represente a un **libro** con propiedades `titulo`, `autor`, `anio`.
+
+let libro: {
+    titulo: string,
+    autor: string,
+    anio: number
+} = {
+    titulo: 'divina comedia',
+    autor: 'dante',
+    anio: 1800
+}
+
+
+// 2. Escribe una función que reciba ese objeto
+// y devuelva un string con formato: `"El libro {titulo} fue escrito por {autor} en {anio}"`.
+
+const showBook = ({ titulo, autor, anio }: { titulo: string; autor: string; anio: number }): string =>
+    `El libro ${titulo} fue escrito por ${autor} en ${anio}`;
+
+console.log(showBook(libro));
+
+// Type Aliases
+
+// 1. Define un `type` llamado `Persona` con propiedades `nombre`, `edad` y `email`.
+
+type Persona = {
+    nombre: string,
+    edad: number,
+    email: string
+}
+
+// 2. Crea un array de `Persona[]` con al menos 3 personas.
+
+let p1: Persona = { nombre: 'bruno', edad: 37, email: 'bruno88@gmail.com' }
+let p2: Persona = { nombre: 'mario', edad: 60, email: 'marioBros@gmail.com' }
+let p3: Persona = { nombre: 'jill', edad: 50, email: 'jillvalentine@gmail.com' }
+
+let personas: Persona[] = [p1, p2, p3]
+
+// 3. Escribe una función que reciba el array y devuelva la persona más joven.
+
+const youngest = (arr: Persona[]): Persona => arr.reduce((a, b) => a.edad < b.edad ? a : b)
+
+console.log(youngest(personas))
+
+// 💡 Extra con sort
+
+const youngestAlt = (arr: Persona[]): Persona =>
+    [...arr].sort((a, b) => a.edad - b.edad)[0];
+
