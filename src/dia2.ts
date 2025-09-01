@@ -109,5 +109,5 @@ console.log(youngest(personas))
 // 💡 Extra con sort
 
 const youngestAlt = (arr: Persona[]): Persona =>
-    [...arr].sort((a, b) => a.edad - b.edad)[0];
+    [...arr].sort((a, b) => a.edad - b.edad)[0]; // <--- [0] tomo el primer elemento del array ya ordenado, que va a ser la persona más joven.
 

@@ -38,7 +38,7 @@ Si no querés generar la carpeta `dist/`, podés ejecutar TypeScript directament
 
 ```json
 "scripts": {
-  "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  "dev": "nodemon --watch \"src/**/*.ts\" --exec ts-node src/index.ts"
 }
 ```
 
