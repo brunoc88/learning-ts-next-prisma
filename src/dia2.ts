@@ -1,4 +1,4 @@
-// Arrays
+// 1. Arrays
 // 1. Declara un array de números y calcula la suma de todos sus elementos.
 
 let numbers: number[] = [1, 2, 3, 4, 5];
@@ -36,7 +36,7 @@ console.log(longestString())
 
 const longest = str.reduce((a, b) => (a.length >= b.length ? a : b))
 
-// Tuplas
+// 2. Tuplas
 
 // 1. Crea una tupla que represente las coordenadas `(x, y)` de un punto en el plano.
 
@@ -59,7 +59,7 @@ console.log(show(producto)); // "El producto Detergente cuesta 100"
 
 // Aquí [nombre, precio] “extrae” directamente los elementos de la tupla.
 
-// Objetos
+// 3. Objetos
 
 // 1. Crea un objeto que represente a un **libro** con propiedades `titulo`, `autor`, `anio`.
 
@@ -82,7 +82,7 @@ const showBook = ({ titulo, autor, anio }: { titulo: string; autor: string; anio
 
 console.log(showBook(libro));
 
-// Type Aliases
+// 4. Type Aliases
 
 // 1. Define un `type` llamado `Persona` con propiedades `nombre`, `edad` y `email`.
 
@@ -111,3 +111,62 @@ console.log(youngest(personas))
 const youngestAlt = (arr: Persona[]): Persona =>
     [...arr].sort((a, b) => a.edad - b.edad)[0]; // <--- [0] tomo el primer elemento del array ya ordenado, que va a ser la persona más joven.
 
+// 5. Interfaces
+
+// 1. Define una `interface` `Animal` con propiedades `especie` y `edad`.
+
+interface Animal {
+    especie: string,
+    edad: number
+}
+
+// 2. Define otra `interface` `Perro` que extienda de `Animal` y tenga `raza`.
+
+interface Perro extends Animal {
+    raza: string
+}
+
+// 3. Crea un objeto `Perro` y muestra sus datos en consola.
+
+let p: Perro = {
+    raza: 'doberman',
+    especie: 'canina',
+    edad: 1
+}
+
+console.log(p)
+
+// 6. Estructuras anidadas
+
+//1. Define una `interface` `Curso` con propiedades `id`, `nombre` y un array de `estudiantes` 
+// (cada estudiante tiene `id` y `nombre`).
+
+type Estudiantes = {
+    id: number,
+    nombre: string
+}
+
+interface Curso {
+    id: number,
+    nombre: string,
+    estudiantes: Estudiantes[]
+}
+
+//2. Crea un curso con al menos 2 estudiantes.
+
+let c: Curso = {
+    id: 1,
+    nombre: 'TypeScript',
+    estudiantes: [
+        { id: 1, nombre: 'Bruno' },
+        { id: 2, nombre: 'Jill' }
+    ]
+}
+
+//3. Escribe una función que reciba un `Curso` y muestre los nombres de todos los estudiantes.
+
+let showCurso = (c: Curso): void => {
+    c.estudiantes.forEach(e => console.log(e.nombre))
+}
+
+showCurso(c)
