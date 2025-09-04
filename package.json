@@ -5,7 +5,7 @@
    "scripts": {
     "build": "tsc",
     "start": "node dist/dia2.js",
-    "dev": "concurrently \"tsc --watch\" \"nodemon dist/dia4.js\""
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/dia5.js\""
   },
   "repository": {
     "type": "git",
