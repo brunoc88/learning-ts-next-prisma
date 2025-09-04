@@ -1,4 +1,4 @@
-### 🏋️ Ejercicios Día 3
+# Día 3: Funciones avanzadas y parámetros opcionales
 
 1. Crear una función `restar(a, b)` que acepte **números** y devuelva la resta. Tipar parámetros y retorno.
 
