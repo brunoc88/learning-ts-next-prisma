@@ -132,12 +132,5 @@ const saludar = (nombre: string): void => {
 - `edad: number` → parámetro debe ser un número.
 - `: string` después de los paréntesis → la función **debe devolver un string**.
 
-## 📝 Ejercicios prácticos
-
-1. Crear una variable `pi: number` con valor `3.1416`.
-2. Función `doble(n: number): number` que devuelva el doble.
-3. Función `esMayorDeEdad(edad: number): boolean` que devuelva `true/false`.
-4. Variable que pueda ser `string | null`.
-
 ---
 ✅ Con esto tenés las bases para empezar a escribir código en TS de forma segura.
