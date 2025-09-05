@@ -6,9 +6,6 @@ te ayudarán a afianzar lo aprendido.
 
 Cada día tiene un tema específico con explicaciones y actividades recomendadas.
 
-Puedes consultarme diariamente para que te recuerde en qué punto quedamos o para resolver
-dudas sobre el contenido.
-
 ---
 
 ## Día 1: Introducción a TypeScript: Tipos básicos y configuración
