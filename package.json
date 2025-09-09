@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/dia2.js",
-    "dev": "concurrently \"tsc --watch\" \"nodemon dist/dia8.js\""
+    "start": "node dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/dia7.js\""
   },
   "repository": {
     "type": "git",
