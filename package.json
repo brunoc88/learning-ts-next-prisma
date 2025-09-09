@@ -2,10 +2,10 @@
   "name": "learning-ts-next-prisma",
   "version": "1.0.0",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "build": "tsc",
     "start": "node dist/dia2.js",
-    "dev": "concurrently \"tsc --watch\" \"nodemon dist/dia7.js\""
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/dia8.js\""
   },
   "repository": {
     "type": "git",
