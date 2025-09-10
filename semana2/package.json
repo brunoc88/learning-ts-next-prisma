@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "build": "tsc && tsc-alias",
+    "start": "node dist/dia8.js",
+    "dev": "concurrently \"tsc --watch\" \"tsc-alias --watch\" \"nodemon dist/dia8.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.10",
+    "tsc-alias": "^1.8.16",
     "typescript": "^5.9.2"
   }
 }
