@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",            // Node clásico
+    "outDir": "./dist",              // compilados a dist
+    "lib": ["ESNext"]                // no necesitamos DOM aquí
+  },
+  "include": ["scripts/**/*"],       // solo scripts
+  "exclude": ["node_modules"]
+}

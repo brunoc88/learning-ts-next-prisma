@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", 
+    "module": "ESNext",                  
+    "moduleResolution": "Node",          
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], 
+    "jsx": "react-jsx",                   
+
+    "strict": true,                       
+    "noImplicitAny": true,                
+    "strictNullChecks": true,             
+    "esModuleInterop": true,              
+    "skipLibCheck": true,                 
+    "forceConsistentCasingInFileNames": true, 
+
+    "baseUrl": "./src",                   
+    "paths": {                            
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src"],                     
+  "exclude": ["node_modules"]
+}
