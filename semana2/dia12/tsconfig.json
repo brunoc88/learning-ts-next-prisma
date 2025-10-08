@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@types/*": [
+        "types/*"
+      ],
+      "@hooks/*":[
+        "hooks/*"
+      ],
+      "@context/*":[
+        "context/*"
+      ]
+    },
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "moduleResolution": "Node",      
+    "lib": ["DOM","DOM.Iterable", "ESNext"],
+    "skipDefaultLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
