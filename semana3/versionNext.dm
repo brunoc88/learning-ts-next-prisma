@@ -1,0 +1,1 @@
+npx create-next-app@15.5.5 nombre-proyecto --typescript
