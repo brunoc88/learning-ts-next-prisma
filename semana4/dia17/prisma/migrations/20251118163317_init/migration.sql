@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "Product" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "nombre" TEXT NOT NULL,
+    "precio" REAL NOT NULL,
+    "creadoEn" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
