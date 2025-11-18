@@ -8,6 +8,7 @@ Crea un modelo Company y otro Address donde:
 
 **Resultado esperado:**
 
+```prisma
 model Company {
   id      Int      @id @default(autoincrement())
   name    String
@@ -20,6 +21,7 @@ model Address {
   company   Company @relation(fields: [companyId], references: [id])
   companyId Int     @unique
 }
+```
 
 ---
 

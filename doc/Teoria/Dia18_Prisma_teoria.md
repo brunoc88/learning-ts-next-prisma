@@ -12,6 +12,7 @@ Una relación uno a uno implica que un registro en la tabla A tiene como máximo
 
 **Ejemplo:**
 
+```prisma
 model User {
   id     Int     @id @default(autoincrement())
   profile Profile?
@@ -23,6 +24,7 @@ model Profile {
   user   User @relation(fields: [userId], references: [id])
   userId Int  @unique
 }
+```
 
 ---
 
@@ -31,6 +33,8 @@ model Profile {
 Una relación uno a muchos significa que un registro en A puede tener múltiples registros relacionados en B.
 
 **Ejemplo:**
+
+```prisma
 
 model Post {
   id      Int     @id @default(autoincrement())
@@ -43,7 +47,7 @@ model User {
   id    Int    @id @default(autoincrement())
   posts Post[]
 }
-
+```
 ---
 
 ## 4. Relaciones N:N
@@ -51,6 +55,8 @@ model User {
 Una relación muchos a muchos implica que múltiples registros en A se relacionan con múltiples registros en B.
 
 **Ejemplo(relación implícita):**
+
+```prisma
 
 model User {
   id      Int      @id @default(autoincrement())
@@ -65,6 +71,7 @@ model Role {
 }
 
 Prisma crea automáticamente una tabla intermedia.
+```
 
 ---
 
