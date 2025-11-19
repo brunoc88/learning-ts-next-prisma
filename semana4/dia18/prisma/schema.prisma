@@ -32,3 +32,15 @@ model Book {
   author Author @relation(fields:[authorId], references:[id])
   authorId Int
 }
+
+model Student {
+  id Int @id @default(autoincrement())
+  name String
+  course Course[]
+}
+
+model Course {
+  id Int @id @default(autoincrement())
+  name String
+  student Student []
+}

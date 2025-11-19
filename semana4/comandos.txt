@@ -1,0 +1,20 @@
+Primero instalar:
+npm install prisma --save-dev
+npm install @prisma/client
+
+SI CAMBIAMOS EL SCHEMA
+
+npx prisma generate
+
+RESETEAR MIGRACIONES
+
+- Importante cuando borramos o movemos una carpeta, cambiamos rutas o reescribimos
+
+npx prisma migrate reset -- Borra todos los datos anteriores
+
+PONER NOMBRE A CARPETA DE MIGRACIONES
+
+npx prisma migrate dev --name add-student-course
+
+
+

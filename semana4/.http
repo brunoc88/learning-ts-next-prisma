@@ -25,3 +25,48 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/api/company
 
+###
+POST http://localhost:3000/api/author
+Content-Type: application/json
+
+{
+  "name":"mariana"
+}
+
+###
+
+GET http://localhost:3000/api/author
+
+###
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+  "name":"aprendiendo prisma",
+  "authorId": 1
+}
+
+###
+
+GET http://localhost:3000/api/books
+
+###
+POST http://localhost:3000/api/course
+Content-Type: application/json
+
+{
+  "name":"aprendiendo js"
+}
+
+###
+
+GET http://localhost:3000/api/course
+
+###
+POST http://localhost:3000/api/students
+Content-Type: application/json
+
+{
+  "name":"bruno",
+  "courses": [1, 2]
+}
