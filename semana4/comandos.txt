@@ -17,4 +17,8 @@ PONER NOMBRE A CARPETA DE MIGRACIONES
 npx prisma migrate dev --name add-student-course
 
 
+VERSION ESTABLE:
 
+npm install prisma@6.19.0 --save-dev
+npm install @prisma/client@6.19.0
+npx prisma --version
