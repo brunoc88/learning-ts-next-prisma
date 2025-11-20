@@ -10,4 +10,12 @@ datasource db {
 model User {
   id Int @id @default(autoincrement())
   name String @unique
+  posts Posts[]
+}
+
+model Posts {
+  id Int @id @default(autoincrement())
+  name String
+  user User @relation(fields:[userId],references:[id])
+  userId Int
 }
