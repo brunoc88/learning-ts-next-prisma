@@ -2,7 +2,7 @@ POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-    "name":"jose"
+    "name":"alejandra"
 }
 
 ###
@@ -20,3 +20,24 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/api/users/3
+
+### 
+POST http://localhost:3000/api/posts
+Content-Type: application/json 
+
+{
+    "name":"ts para principiantes",
+    "userId": 4
+}
+
+###
+GET http://localhost:3000/api/posts
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name":"jose emilio",
+    "title": "vencer el sistema"
+}
