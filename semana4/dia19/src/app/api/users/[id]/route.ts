@@ -26,4 +26,32 @@ export const DELETE = async (req: Request, { params }: { params: Promise<{ id: s
 
 }
 
+// OTRA FORMA
 
+/*
+interface Context{
+    params:{
+         id: string
+    }
+}
+export const PUT = async (req: Request, {params}: Context ) => {
+    const {name} = await req.json()
+    let {id} = await params
+    
+    await prisma.user.update({where:{id:Number(id)}, data : {name}})
+    return NextResponse.json(`actualizado`)
+
+}
+
+export const DELETE = async (req:Request, {params}:Context) => {
+    let {id} = await params
+
+    await prisma.user.delete({
+        where:{id:Number(id)}
+    })
+
+    return NextResponse.json(`eliminado`)
+
+
+}
+*/
