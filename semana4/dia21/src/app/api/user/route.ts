@@ -4,18 +4,24 @@ import bcrypt from "bcrypt"
 
 export const POST = async (req: Request) => {
     try {
-        const { email, password } = await req.json()
+        const { email, password, rol } = await req.json()
 
         const hashedPassword = await bcrypt.hash(password, 10)
 
-        const user = await prisma.user.create({
+        await prisma.user.create({
             data: {
                 email,
-                password: hashedPassword
+                password: hashedPassword,
+                rol
             }
         })
 
-        return NextResponse.json({ msj: 'Usuario creado' }, {status:201})
+        const user = {
+            email,
+            rol
+        }
+
+        return NextResponse.json({ msj: 'Usuario creado', user }, {status:201})
     } catch (error: any) {
         return NextResponse.json({ error: error.message }, { status: 500 })
     }
