@@ -3,8 +3,10 @@ import { redirect } from "next/navigation"
 import { authOptions } from "../api/auth/[...nextauth]/route"  // ajustá ruta según tu proyecto
 
 export default async function AdminPage() {
+  
   const session = await getServerSession(authOptions)
-
+/*
+ejercicio 4
   // ❌ No hay sesión → fuera
   if (!session) {
     redirect("/login")
@@ -13,7 +15,7 @@ export default async function AdminPage() {
   // ❌ No tiene rol admin → fuera
   if (session.user.rol !== "admin") {
     redirect("/")
-  }
+  }*/
 
   // ✔️ Si pasa ambas validaciones → renderizar
   return (

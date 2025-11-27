@@ -5,3 +5,25 @@ Content-Type: application/json
     "email": "mariana88@gmail.com",
     "password": "123"
 }
+
+###
+GET http://localhost:3000/api/admin/stats
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "mariana88@gmail.com",
+    "password": "123"
+}
+
+###
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "bruno88@gmail.com",
+    "password": "123"
+}

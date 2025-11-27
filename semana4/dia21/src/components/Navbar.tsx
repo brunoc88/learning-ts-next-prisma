@@ -11,6 +11,7 @@ const Navbar = () => {
             {session?.user ? (
                 <div>
                     <p>{session?.user?.email}</p>
+                    <p>{session?.user?.rol}</p>
                     <button onClick={() => signOut()}>LogOut</button>
                 </div>
                 
