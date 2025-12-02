@@ -18,3 +18,4 @@ export async function handleLogin(prevState: any, formData: FormData) {
 
   return { success: true, errors: {} };
 }
+
