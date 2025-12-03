@@ -12,3 +12,15 @@ model User {
   email String @unique
   password String 
 }
+
+model User2 {
+  id Int @id @default(autoincrement())
+  name String
+  age Int
+}
+
+model Product {
+  id Int @id @default(autoincrement())
+  title String
+  price Int
+}
